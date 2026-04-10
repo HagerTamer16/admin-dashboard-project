@@ -1,0 +1,270 @@
+.booking-container { 
+  background: #f6f7fb;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  padding: 20px 30px 10px;
+  overflow-y: auto;
+ 
+}
+
+.booking-title {
+ font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;  
+  margin-top: -10px;
+}
+
+.booking-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+ 
+}
+
+.stat-card {
+  background-color:#EDEDED;
+  border-bottom: 1px solid #D7D7D7;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 16px;
+  padding: 16px 18px;
+  border: 1px solid #eeeeee;
+
+}
+
+.stat-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.stat-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.stat-label {
+  font-size: 12.5px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.5px;
+}
+
+.booking-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-input {
+  width: 220px;
+  height: 36px;
+  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+  padding: 0 35px 0 35px;
+  outline: none;
+  background-color: #F8F8F8;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  opacity: 0.6;
+}
+
+.filter-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 16px;
+  padding: 7px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  background-color:#EDEDED;
+  border-bottom: 1px solid #D7D7D7;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.filter-select select {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.booking-table-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  margin-top: 10px;  
+  min-height: 550px;
+ 
+}
+
+.table-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.table-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.refund-btn {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.refund-btn:hover {
+  background-color: #333333;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.booking-table th {
+  text-align: left;
+  font-size: 13px;
+  color: #888;
+  padding-bottom: 10px;
+}
+
+.booking-table td {
+ padding: 12px 0;
+  border-top: 1px solid #f1f1f1;
+  font-size: 14px;
+}
+
+.booking-table tr:last-child td {
+  border-bottom: none;
+}
+
+.id-cell {
+  font-weight: 500;
+  color: #666;
+}
+
+.car-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.car-img-placeholder {
+  width: 40px;
+  height: 32px;
+  background-color: #2a2a2a;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.car-name {
+  font-size: 12.5px;
+  color: #333333;
+  line-height: 1.4;
+}
+
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.user-icon {
+  width: 22px;
+  opacity: 0.7;
+}
+
+.duration-cell {
+  font-size: 12px;
+  color: #555555;
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.price-cell {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #444444;
+}
+
+.status-dot-img {
+  width: 8px;
+  height: 8px;
+  object-fit: contain;
+}
+
+.loading-cell {
+  text-align: center;
+  color: #aaaaaa;
+  padding: 40px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.page-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444444;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.page-btn:hover {
+  background-color: #f5f5f5;
+}
+
+.page-btn.active {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}

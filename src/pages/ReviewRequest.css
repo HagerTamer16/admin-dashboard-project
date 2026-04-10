@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-y: auto;
+}
+.review-container {
+ flex: 1; 
+ margin-top: -30px; 
+ padding: 20px 24px;  
+ background:#F8F8F8;
+}
+.review-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #aaaaaa;
+  font-size: 14px;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px; 
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  margin-top: -50px;
+}
+
+.back-btn:hover {
+  background-color: #eeeeee;
+}
+
+.review-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: -20px;
+}
+.review-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0 24px; 
+}
+.review-left {
+  padding-right: 20px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.review-right {
+  padding-left: 20px;
+}
+
+.review-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.info-label {
+  min-width: 150px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.info-value {
+  font-size: 13px;
+  color: #777;
+}
+
+.request-description {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.doc-group {
+  margin-bottom: 22px;
+}
+
+.doc-label {
+   min-width: 150px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.doc-photos {
+  display: flex;
+  gap: 14px;
+}
+
+.photo-card {
+  width: 95px;
+  height: 95px;
+  background: #e8e8e8;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-actions {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  margin-top: auto;
+}
+
+.reject-btn {
+  flex: 1;
+  padding: 14px;
+  border-radius: 50px;
+  border: 1.5px solid #e53e3e;
+  background: transparent;
+  color: #e53e3e;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reject-btn:hover {
+  background: #fff0f0;
+}
+
+.accept-btn {
+  flex: 1;
+  padding: 14px;
+  border-radius: 50px;
+  border: 1.5px solid #2b7de9;
+  background: transparent;
+  color: #2b7de9;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.accept-btn:hover {
+  background: #f0f5ff;
+}
+
+.reject-btn:disabled,
+.accept-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

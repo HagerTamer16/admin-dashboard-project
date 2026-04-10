@@ -1,0 +1,28 @@
+.app-layout {
+  display: flex;
+  height: 100vh;
+  overflow-y: auto;  
+}
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.main-content {
+  margin-left: 250px; 
+  width: calc(100% - 250px);
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  height: 60px;
+  flex-shrink: 0;
+}
+.page-content {
+  flex: 1;   
+  background-color: #f8f8f8;
+  padding: 20px;
+   
+}

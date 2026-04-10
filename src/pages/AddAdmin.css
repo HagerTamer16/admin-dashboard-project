@@ -1,0 +1,147 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.add-admin-container {
+  width: 600px;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.add-admin-card {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.add-admin-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: -0.3px;
+ 
+}
+
+.add-admin-subtitle {
+  font-size: 15px;
+   font-weight: 700;
+  color: #777777;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.success-banner {
+  width: 100%;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+
+}
+
+.error-banner {
+  width: 100%;
+  background-color: #fde8e8;
+  color: #c53030;
+  border: 1px solid #f5c6c6;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+ 
+}
+
+.add-admin-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 6px 14px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #1a1a1a;
+  background-color: #F8F8F8 ;
+
+  outline: none;
+  transition: border-color 0.15s ease;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder {
+  color: #b8b8b8;
+}
+
+.form-input:focus {
+  border-color: #999999;
+}
+
+.form-group.has-error .form-input {
+  border-color: #e53e3e;
+}
+
+.error-msg {
+  font-size: 11px;
+  color: #e53e3e;
+  
+}
+
+.create-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.create-btn:hover {
+  background-color: #333333;
+}
+
+.create-btn:active {
+  transform: scale(0.98);
+}
+
+.create-btn:disabled {
+  background-color: #888888;
+  cursor: not-allowed;
+  transform: none;
+}
+.verification-notice {
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
