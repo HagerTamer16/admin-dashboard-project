@@ -16,7 +16,7 @@ const ResetPassword = () => {
   return (
     <div className="reset-container">
       <div className="reset-card">
-        <h1 className="reset-title">Reset Password</h1>
+        <h1 className="reset-title">Change Password</h1>
 
         {success && (
           <div className="success-banner">Password changed successfully!</div>
